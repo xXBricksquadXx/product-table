@@ -1,5 +1,9 @@
-import { testComponent } from "./components";
+import { Table } from "./components";
 
-document.querySelector("#root").innerHTML = testComponent();
+const root = document.getElementById("root");
 
-console.log(testComponent);
+function render() {
+  root.innerHTML = Table();
+}
+
+render();
