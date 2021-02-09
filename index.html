@@ -19,11 +19,45 @@
     <main>
       <div>
         <label for="search" class="screen-reader-text">Product Search</label
-        ><input type="search" id="search" />
+        ><input type="search" id="search" placeholder="🔍" />
+      </div>
+
+      <div>
+        <label for="in-stock">In Stock Only?</label
+        ><input type="checkbox" id="in-stock" />
       </div>
 
       <table>
-        <!-- TODO: Review 'lib/data.js' and create and create a table to display it. (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)-->
+        <thead>
+          <tr>
+            <td>Category</td>
+            <td>Name</td>
+            <td>Price</td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Sporting Goods</td>
+            <td>Football</td>
+            <td>$49.99</td>
+          </tr>
+          <tr>
+            <td>Sporting Goods</td>
+            <td>Baseball</td>
+            <td>$9.99</td>
+          </tr>
+          <tr>
+            <td>Sporting Goods</td>
+            <td>Basketball</td>
+            <td>$29.99</td>
+          </tr>
+          <tr>
+            <td>Electronics</td>
+            <td>iPod Touch</td>
+            <td>$99.99</td>
+          </tr>
+        </tbody>
       </table>
     </main>
 

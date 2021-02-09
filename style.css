@@ -3,6 +3,41 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+h1 {
+  text-align: center;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 320px;
+}
+
+div,
+table {
+  margin: 0.5rem 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead {
+  font-weight: bold;
+}
+
+td {
+  border: solid thin black;
+  margin: 0;
+  padding: 4px;
+}
+
+input[type="checkbox"] {
+  margin-left: 4px;
+}
+
 /* https://css-tricks.com/snippets/css/accessibilityseo-friendly-css-hiding/  */
 .screen-reader-text {
   left: -9999px;
