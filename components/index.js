@@ -1,2 +1,2 @@
-// Functional Component
-export default () => `<p>I am a component!</p>`;
+// TODO: Is import the default from 'test' and export out as 'testComponent'
+export { default as testComponent } from "./test";
