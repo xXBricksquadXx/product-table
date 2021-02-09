@@ -1,8 +1,8 @@
 {
-  "name": "parcel-starter",
+  "name": "Product Table",
   "version": "1.0.1",
   "private": true,
-  "description": "A starter template repo for 'vanilla SPAs'",
+  "description": "A Simple Product Table'",
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html"
@@ -13,7 +13,7 @@
     "spa",
     "parcel"
   ],
-  "author": "Manav Misra",
+  "author": "Colby Cardell",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^7.19.0",

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,19 +9,24 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
 
-    <!-- TODO: Add some Google Fonts? -->
-
     <link rel="stylesheet" href="style.css" />
 
-    <!-- TODO: Update '<title>'. -->
-    <title>Parcel Starter SPA</title>
+    <title>Product Search</title>
   </head>
   <body>
-    <!-- TODO: Update this to match or at least resemble 'title' (for SEO 🤷🏾‍♂️) -->
-    <h1>Parcel Starter SPA</h1>
+    <h1>Product Search</h1>
 
-    <!-- TODO: 'render' content here -->
-    <div id="root"></div>
-    <script src="./index.js"></script>
+    <main>
+      <div>
+        <label for="search" class="screen-reader-text">Product Search</label
+        ><input type="search" id="search" />
+      </div>
+
+      <table>
+        <!-- TODO: Review 'lib/data.js' and create and create a table to display it. (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table)-->
+      </table>
+    </main>
+
+    <script src="./scripts.js" type="module"></script>
   </body>
 </html>
