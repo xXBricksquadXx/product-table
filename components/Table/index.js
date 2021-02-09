@@ -1,1 +1,5 @@
-export default () => `<table></table>`;
+import THead from "./Head";
+
+export default () => `<table>
+  ${THead()}
+</table>`;
