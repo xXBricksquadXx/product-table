@@ -1,11 +1,10 @@
 // TODO: Avoid pulling data in directly to a component.
-import { catalog } from "~/lib";
-// import TRow from "./Row";
 
-// console.log(TRow);
+import store from "~/store";
 
 function renderTableRows() {
-  return catalog
+  return store
+    .getData()
     .map(
       (product) => `<tr>
   <td>${product.category}</td>
