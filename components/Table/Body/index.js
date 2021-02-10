@@ -1,8 +1,8 @@
 // TODO: Avoid pulling data in directly to a component.
 import { catalog } from "~/lib";
-import TRow from "./Row";
+// import TRow from "./Row";
 
-console.log(TRow);
+// console.log(TRow);
 
 function renderTableRows() {
   return catalog
