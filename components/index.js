@@ -1,2 +1,2 @@
-// Functional Component
-export default () => `<p>I am a component!</p>`;
+export { default as Filters } from "./Filters";
+export { default as Table } from "./Table";
