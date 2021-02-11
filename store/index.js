@@ -1,19 +1,27 @@
 export default {
-  // This will end up keeping the whole catalog
+  // This is the 'state'
+  currentSearchTerm: "",
   data: [],
   dataFilters: {},
+  // These are our 'store actions'
+  getCurrentSearchTerm() {
+    return this.currentSearchTerm;
+  },
   getData() {
     return Object.values(this.dataFilters)
       .filter((dataFilter) => dataFilter)
       .reduce(
-        // Keep filtering the data using as many filters as there are
+        // Keep filtering the data one filter at a time
         (filteredData, currentFilter) => filteredData.filter(currentFilter),
-        // Initialize with the full set of data
+        // Initialize with the full array of the catalog items
         this.data
       );
   },
   getDataFilters() {
     return this.dataFilters;
+  },
+  setCurrentSearchTerm(newSearchTerm) {
+    this.currentSearchTerm = newSearchTerm;
   },
   setData(newData) {
     // 'concat' is 'non-mutating'
